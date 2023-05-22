@@ -3,13 +3,13 @@ import React from "react";
 function Logo() {
   return (
     <svg
-      width="192"
-      height="32"
+      width={192}
+      height={32}
       viewBox="0 0 192 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_4494_63)">
+      <g clipPath="url(#clip0_4494_63)">
         <path
           d="M15.8928 31.8928C24.6702 31.8928 31.7856 24.7774 31.7856 16C31.7856 7.22269 24.6702 0.107239 15.8928 0.107239C7.11545 0.107239 0 7.22269 0 16C0 24.7774 7.11545 31.8928 15.8928 31.8928Z"
           fill="url(#paint0_linear_4494_63)"
@@ -63,19 +63,19 @@ function Logo() {
         <linearGradient
           id="paint0_linear_4494_63"
           x1="0.000976"
-          y1="16"
+          y1={16}
           x2="31.7859"
-          y2="16"
+          y2={16}
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D71C5D" />
-          <stop offset="0.109" stop-color="#DC2B54" />
-          <stop offset="0.5225" stop-color="#EF6233" />
-          <stop offset="0.8319" stop-color="#FB831F" />
-          <stop offset="1" stop-color="#FF9017" />
+          <stop stopColor="#D71C5D" />
+          <stop offset="0.109" stopColor="#DC2B54" />
+          <stop offset="0.5225" stopColor="#EF6233" />
+          <stop offset="0.8319" stopColor="#FB831F" />
+          <stop offset={1} stopColor="#FF9017" />
         </linearGradient>
         <clipPath id="clip0_4494_63">
-          <rect width="192" height="32" fill="white" />
+          <rect width={192} height={32} fill="white" />
         </clipPath>
       </defs>
     </svg>

@@ -12,8 +12,8 @@ const Header = () => {
             <SearchField/>
         </div>
         <div className='flex items-center text-base font-medium'>
-            <p className='text-black cursor-pointer'>Log in</p>
-            <button className='text-white bg-gradient-to-r from-red-btn to-orange-btn ml-6 w-20 h-10 border-none rounded-[10px] '>Sign up</button>
+            <button className='w-20 h-10 border-none '>Log in</button>
+            <button className='text-white bg-gradient-to-r from-red-btn to-orange-btn ml-6 w-20 h-10 border-none rounded-10 '>Sign up</button>
         </div>
     </div>
   )

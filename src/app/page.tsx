@@ -1,11 +1,12 @@
-import Footer from "@/components/Footer/page";
-import Header from "@/components/Header/page";
+import GamePage from "@/components/Games/page";
+import PageLayout from "@/components/PageLayout/page";
 
 export default function Home() {
   return (
-    <div className="w-full h-full font-poppins">
-      <Header/>
-      <Footer/>
-    </div>
+    <PageLayout>
+      <div className="w-[75%]">
+        <GamePage/>
+      </div>
+    </PageLayout>
   )
 }
