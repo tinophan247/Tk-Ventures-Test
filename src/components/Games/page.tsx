@@ -35,7 +35,14 @@ const GamePage = () => {
     setOpenModal(true)
     };
 
+    const filter = items.map(item => {
+      if(item.BlockChains.find(x => x.Name === selectedBC?.Name) !== undefined)
+      return item
+    })
     
+    const result = filter.filter(item => item !== undefined)
+    const filterItems = selectedBC?.Name == undefined ? items : result
+
   return (
     <div className="mt-8 mb-28">
       {openModal && (
@@ -71,7 +78,7 @@ const GamePage = () => {
             </tr>
           </thead>
           <tbody>
-            {items.map((item, index) => {
+            {filterItems.map((item, index) => {
               return (
                 <tr style={{ borderBottom: "1px solid #EDF2F7" }} key={index}>
                   <td className="w-[4%] text-center py-4 ">{index + 1}</td>
